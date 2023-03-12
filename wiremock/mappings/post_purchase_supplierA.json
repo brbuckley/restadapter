@@ -1,0 +1,30 @@
+{
+  "request": {
+    "url": "/",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath" : {
+          "expression": "$.id",
+          "contains": "PUR"
+        }
+      },
+      {
+        "matchesJsonPath": {
+          "expression": "$.items[*].id",
+          "contains": "PRD"
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": "SUA0000001",
+      "purchase_id": "PUR0000001"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
