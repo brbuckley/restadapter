@@ -1,0 +1,6 @@
+supplier:
+  endpoint: 'http://wiremock:8081/'
+
+spring:
+  rabbitmq:
+    host: rabbitmq

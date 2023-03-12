@@ -5,6 +5,8 @@ spring:
   web:
     resources:
       add-mappings: false
+  rabbitmq:
+    host: localhost
 
 management:
   info:
@@ -26,8 +28,8 @@ management:
 info:
   build:
     version": '1.0.0'
-    artifact: 'purchase-ms'
-    name: 'Purchase Microservice'
+    artifact: 'restadapter'
+    name: 'REST Adapter'
     time: ${maven.build.timestamp}
 
 server:
